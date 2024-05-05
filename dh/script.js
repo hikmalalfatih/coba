@@ -1,28 +1,28 @@
 function clickButton(){
+    const harimau = document.querySelectorAll('.harimau');
     const domba = document.querySelectorAll('.domba');
-    const nyamuk = document.querySelectorAll('.nyamuk');
     const loveAnimation = document.querySelectorAll('.love-animation');
 
     const button = document.querySelector('.btn');
     const borderDiv = document.querySelector('.border');
 
-    domba.forEach((nodelist) => {
+    harimau.forEach((nodelist) => {
         nodelist.classList.toggle('transition-out');
     });
 
-    nyamuk.forEach((nodelist) => {
+    domba.forEach((nodelist) => {
         nodelist.classList.toggle('transition-out');
     });
 
     button.classList.toggle('transition-out');
 
     setTimeout(() => {
-        domba.forEach((nodelist) => {
+        harimau.forEach((nodelist) => {
             nodelist.classList.toggle('hide');
             nodelist.classList.toggle('transition-out');
         });
     
-        nyamuk.forEach((nodelist) => {
+        domba.forEach((nodelist) => {
             nodelist.classList.toggle('hide');
             nodelist.classList.toggle('transition-out');
         });
